@@ -56,6 +56,9 @@ a {
 .form-control:focus::-moz-placeholder {
   color: rgb(204, 204, 204);
 }
+.form-control:focus:-ms-input-placeholder {
+  color: rgb(204, 204, 204);
+}
 .form-control:focus::placeholder {
   color: rgb(204, 204, 204);
 }
@@ -128,7 +131,7 @@ a {
 
 .calc {
   margin-top: 30px;
-  font-family: "Courier New,Courier,monospace";
+  font-family: "Courier New", Courier, monospace;
 }
 
 #calc-total {
@@ -144,6 +147,10 @@ a {
 .calc-row {
   display: flex;
   align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .calc-row > div {
   flex: 2;
